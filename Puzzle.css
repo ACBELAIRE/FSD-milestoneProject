@@ -13,10 +13,21 @@ body {
 
 }
 /*Create the box/board for the sliding puzzle game(height,width,center and color)*/
+/*Use flex box so photo tiles within the boards go horizonal from left to right*/
 .puzzle-board {
-        width: 400px;
-        height: 400px;
-        margin: 0 auto
+        width: 420px;
+        height: 420px;
+        margin: 0 auto;
         background-color: yellow;
-        border: 15pox solic
+        border: 15px solid red;
+        display: flex;
+        flex-wrap: wrap;
+}
 
+/*the images within each square declaire size to be 420/3=14 l&w for each square*/
+.puzzle-board img{
+        width:138px;
+        height: 138px;
+        border: 1px solid black;
+
+}
