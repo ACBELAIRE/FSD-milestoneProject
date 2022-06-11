@@ -12,4 +12,11 @@ body {
         width: 500px;
 
 }
+/*Create the box/board for the sliding puzzle game(height,width,center and color)*/
+.puzzle-board {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto
+        background-color: yellow;
+        border: 15pox solic
 
