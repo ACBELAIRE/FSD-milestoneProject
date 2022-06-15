@@ -9,8 +9,16 @@
     </head>
 
     <body>
-        <img class= "logo" src="Photos for 3x3/simp logo.png">
-        <div class="puzzle-board"></div>
+        <div id = 'start-screen' class='screen css='display:block'>
+        <button onclick = 'startGame()'>Start Unscrambling</button>
+    </div>
+        <canvas id ='canvas' style='display:none'></canvas>
+        <img id= "logo" src="Photos for 3x3/simp logo.png">
+        <img id="gameName" src="Photos for 3x3/snapshot scramble.png">
+        <div id="puzzle-board"></div>
         <h1>Total Slides: <span id="slides">0</span></h1>
+
+        <!-- Add music player and controls-->
+        <audio controls="controls"><source src="The Simpsons.mp3" type="audio/mpeg" /></audio>
     </body>
 <html>
