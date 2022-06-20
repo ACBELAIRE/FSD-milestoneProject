@@ -101,23 +101,8 @@ function dragEnd() {
     slides +=1
     document.getElementById('slides').innerText = slides;
 }
-
 }
 
 
-
-
-/*create function for when the window pops up, prompting u with rules and and a play button
-
-window.onload = function(){
-    enterscreen.EnterBtn.addEventListener(mouseEvent.Click,enterGame);
-    function enterGame(event:MouseEvent).......
-
-}
+ // create functions to start the game 
  
-
-/*create a function for when the play button is pressed instead of the window*/
-/* Can this be turned into a forEach Statment */
-/*Create an image tag and a id for the tag */
-
-
