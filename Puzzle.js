@@ -22,7 +22,7 @@ var imgOrder=["4","2","8","5","1","6","7","9","3"];
 
 window.onload = function() {
 
-                document.getElementById("slides").style.visbility = "none";
+                document.getElementById("").style.visbility = "none";
                 document.getElementById("TS").style.visbility = "none";
 }
  
@@ -112,6 +112,5 @@ function dragEnd() {
  // create functions to start the game 
  function startGame() {
      document.getElementById("start").style.visibility = "hidden";
-     document.getElementById("TS").style.visibility = "Visible";
      Puzzlegame()
  }
