@@ -28,9 +28,13 @@ The tech used to build this game:
 
 Outstanding bugs and Unfinished functionality
 
-I started the coding for a "start screen" as well as a "game won" screen. But I don't have the best understanding of it for it to work or understand what I am doing to get it to work. 
+I started the coding for a  "game won" screen. But I don't have the best understanding of it for it to work or understand what I am doing to get it to work. 
         If the photos are in the array {"1","2","3","4","5","6","7","8","9"}, Then signal the "You Won" Component.
         The same would apply to intermediate and advanced levels as long as they end up in the order 1-25 and 1-49 then it would signal "You Won" 
+
+I also couldn't find out within the code, why the increment counter for slides wouldn't appear hidden on start screen and visible when I selected the element to be visible within the startgame() function . (So I left it to be seen on both sides.)
+
+I couldn't figure out why the letters were doubled in Start Screen.
 
 Also it would be great to have a bart simpson audio  once the image is completed. and also have after random audio after so many slide transitions.. such as 10 ,20,30+ audio like "I can do that, but I don't wanna" "chuuump" "buttman" "chance to be bad" "uhh" etc
         Audio can be retrieved from: https://www.soundboard.com/sb/Bart_Simpson_sounds 

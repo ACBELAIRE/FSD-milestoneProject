@@ -9,23 +9,30 @@
     </head>
 
     <body>
-       
+       <!-- Add music player and controls-->
+    <audio controls autoplay>
+        <source src="The Simpsons.mp3" type="audio/mpeg">
+   </audio>
     <!--start-screen-->
     <div id="start">
         <h1> How to Play:</h1>
-    <p> Switch tiles with the mostly while tile, until complete image is shown. Tiles only swtich up & down, and right and left.</p>
+    <p>Switch each tile with the white tile until the photo is fully formed</p>
+    <p>Tiles can only be switched left/right and up/down</p>
         <a href="#" onclick="startGame()">Start Game</a>
     </div>
 
-    <canvas id="canvas" style="display:none"></canvas> 
-        <img id= "logo" src="Photos for 3x3/simp logo.png">
-        <img id="gameName" src="Photos for 3x3/snapshot scramble.png">
+    <div id="game-won" style="display:none">
+        <h1>You Won!</h1>
+        <a href="#" onclick="startGame()">Start Game</a>
+    </div>
+
+        <img id= "logo" src="Photos/simp logo.png">
+        <img id="gameName" src="Photos/snapshot scramble.png">
         <div id="puzzle-board"></div>
-        <h1>Total Slides: <span id="slides">0</span></h1>
+        <img id="famPhoto" src="Simp Family Image.png">
+        <h1 id = "TS" >Total Slides: <span id="slides">0</span></h1>
+   
         
-         <!-- Add music player and controls-->
-         <audio controls autoplay>
-             <source src="The Simpsons.mp3" type="audio/mpeg">
-        </audio>
+    
     </body>
 <html>

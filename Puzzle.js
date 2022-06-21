@@ -21,24 +21,30 @@ var imgOrder=["4","2","8","5","1","6","7","9","3"];
 
 
 window.onload = function() {
-    for (let r=0;r < rows;r++) {
-        for(let c=0; c < columns; c++) {
-    
+
+                document.getElementById("slides").style.visbility = "none";
+                document.getElementById("TS").style.visbility = "none";
+}
+ 
+function Puzzlegame() {
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+
             //      <img id="0-0" src="1.jpg"></img>
             /*img tag*/
             let tile = document.createElement("img");
             /*img id for it to give location of tile within puzzle board (0) */
-            tile.id= r.toString() + "-" + c.toString();
+            tile.id = r.toString() + "-" + c.toString();
             /*setimage source.. from front of array linking it to the corresponding photos*/
-            tile.src = imgOrder.shift() + ".jpg" ;
+            tile.src = imgOrder.shift() + ".jpg";
 
             //DRAG FUNCTION
-            tile.addEventListener("dragstart", dragStart)  //click image
-            tile.addEventListener("dragover", dragOver)   //move image
-            tile.addEventListener("dragenter", dragEnter) //image drags onto another
-            tile.addEventListener("dragleave", dragLeave) // leaves dragged image
-            tile.addEventListener("drop", dragDrop)  //drop dragged image
-            tile.addEventListener("dragend",dragEnd);  // two tiles swapped
+            tile.addEventListener("dragstart", dragStart); //click image
+            tile.addEventListener("dragover", dragOver); //move image
+            tile.addEventListener("dragenter", dragEnter); //image drags onto another
+            tile.addEventListener("dragleave", dragLeave); // leaves dragged image
+            tile.addEventListener("drop", dragDrop); //drop dragged image
+            tile.addEventListener("dragend", dragEnd); // two tiles swapped
 
 
             document.getElementById("puzzle-board").append(tile);
@@ -103,6 +109,9 @@ function dragEnd() {
 }
 }
 
-
  // create functions to start the game 
- 
+ function startGame() {
+     document.getElementById("start").style.visibility = "hidden";
+     document.getElementById("TS").style.visibility = "Visible";
+     Puzzlegame()
+ }
