@@ -21,9 +21,9 @@ var imgOrder=["4","2","8","5","1","6","7","9","3"];
 
 
 window.onload = function() {
-
-                document.getElementById("").style.visbility = "none";
-                document.getElementById("TS").style.visbility = "none";
+                document.getElementById("start").style.visbility = "visible";
+                document.getElementById('wonGame').style.visibility = "hidden";
+              
 }
  
 function Puzzlegame() {
@@ -46,7 +46,7 @@ function Puzzlegame() {
             tile.addEventListener("drop", dragDrop); //drop dragged image
             tile.addEventListener("dragend", dragEnd); // two tiles swapped
 
-
+            // inserts the tag within the board
             document.getElementById("puzzle-board").append(tile);
         }
     }
@@ -78,7 +78,7 @@ function dragEnd() {
     if(!thatTile.src.includes("1.jpg")) {
            return;
     }
-    //add adjacency by defining coordinates
+    //add adjacency by defining coordinates r=row c=colum
     let theseCoords = thisTile.id.split("-");   // ex if "1-1" -> ["1","1"]
     let r = parseInt(theseCoords[0]);
     let c = parseInt(theseCoords[1]);
@@ -109,8 +109,18 @@ function dragEnd() {
 }
 }
 
- // create functions to start the game 
+ // create function to start the game 
  function startGame() {
      document.getElementById("start").style.visibility = "hidden";
+     document.getElementById('wonGame').style.visibility = "hidden"
      Puzzlegame()
  }
+
+ //create function for you win
+ 
+function youWon(){
+    if(imgOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]){
+        document.getElementById('wonGame').style.visibility = "visible"
+    }
+}
+

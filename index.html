@@ -5,11 +5,12 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Sliding Puzzle</title>
      <script src="Puzzle.js"></script>
-     <link rel="stylesheet"  type="text/css" href="puzzle.css"/>
+     <link rel="stylesheet"  type="text/css" href="/puzzle.css"/>
     </head>
 
     <body>
        <!-- Add music player and controls-->
+
     <audio controls autoplay>
         <source src="The Simpsons.mp3" type="audio/mpeg">
    </audio>
@@ -21,9 +22,9 @@
         <a href="#" onclick="startGame()">Start Game</a>
     </div>
 
-    <div id="game-won" style="display:none">
+    <div id="wonGame">
         <h1>You Won!</h1>
-        <a href="#" onclick="startGame()">Start Game</a>
+        <a href="#" onclick="startGame()">Play Again</a>
     </div>
 
         <img id= "logo" src="Photos/simp logo.png">
@@ -31,8 +32,6 @@
         <div id="puzzle-board"></div>
         <img id="famPhoto" src="Simp Family Image.png">
         <h1>Total Slides: <span id="slides">0</span></h1>
-   
-        
     
     </body>
 <html>
