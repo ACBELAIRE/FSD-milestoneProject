@@ -38,6 +38,8 @@ I also couldn't find out within the code, why the increment counter for slides w
 
 I couldn't figure out why the letters were doubled in Start Screen.
 
+Future Functionality
+
 Also it would be great to have a bart simpson audio  once the image is completed. and also have after random audio after so many slide transitions.. such as 10 ,20,30+ audio like "I can do that, but I don't wanna" "chuuump" "buttman" "chance to be bad" "uhh" etc
         Audio can be retrieved from: https://www.soundboard.com/sb/Bart_Simpson_sounds 
 
