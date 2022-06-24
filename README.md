@@ -28,7 +28,7 @@ The tech used to build this game:
 
 Outstanding bugs and Unfinished functionality
 
-Wanted the "start" portion to be static, but as I switched it around.. it would let me switch it left and right  but not downwards to stay within th square. So I left it on absolute.
+Wanted the "start" portion to be static, but as I switched it around.. it would let me move location left and right  but not upward and downward without affecting the background and wouldnt move to location within the square. So I left it on absolute.
 
 I started the coding for a  "game won" screen. But I don't have the best understanding of it for it to work or understand what I am doing to get it to work. 
         If the photos are in the array {"1","2","3","4","5","6","7","8","9"}, Then signal the "You Won" Component.
