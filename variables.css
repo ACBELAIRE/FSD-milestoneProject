@@ -1,0 +1,11 @@
+//scss variables! (10-15)
+$myfont-stack:'Times New Roman', Times, serif;
+$myfont-size: 16px;
+$primary-color: #FFFF00;
+$mytext-align: center;
+$mytext-shadow: 1px 1px black;
+$puzzle-border: 10px solid green;
+$puzzle-margin: 0 auto;
+$puzzle-width: 420px;
+$puzzle-height: 420px;
+$puzzle-display: flex;

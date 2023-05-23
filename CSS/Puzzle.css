@@ -1,9 +1,9 @@
+/*# sourceMappingURL=style.css.map */
 body {
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
         color:yellow;
-        text-shadow: 2px 2px black;
-        background: url("Photos/background 2.jpeg");
+        background: url("Photos/springfield.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -16,7 +16,7 @@ body {
         top: 50%;
         left:19%;
         margin-top: -500px;
-        margin-left: -600px;
+        margin-left: -800px;
         height:400px;
         width:450px;
         

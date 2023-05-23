@@ -1,0 +1,74 @@
+//10-15 variables   
+//3-5 SCSS partial files, imported
+//10-15 nested selectors, with at least 2 uses of the scss ampersand (&)
+
+@import 'variables';
+@import 'Photos/springfield.png';
+@import'nestedselector';
+
+body{
+    font-family: $myfont-stack;
+    font-size: $myfont-size;
+    color: $primary-color;
+    text-align: $mytext-align;
+    text-shadow: $mytext-shadow;
+    background: url("Photos/springfield.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+#puzzle-board {
+    width: $puzzle-width;
+    height: $puzzle-height;
+    background-color: $primary-color;
+    border: $puzzle-border;
+    margin: $puzzle-margin;
+    display: $puzzle-display
+}
+
+
+//2-4 SCSS functions   //2-4 instances of SCSS flow controll directives or operators
+@function dragEnd() {
+    // only allow switching with this tile/a blank tile
+    @if(thatTileincludes("1.jpg")) {
+           @return dragEnd();
+    }}
+
+@function  youWon() {
+        @if(imgOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]){
+            document.getElementById('wonGame').style.visibility = "visible"
+        }
+    }
+
+@function Puzzlegame() {
+    @for(let r = 0; r < rows; r++) {
+        @for (let c = 0; c < columns; c++) {
+
+            //      <img id="0-0" src="1.jpg"></img>
+            /*img tag*/
+            let tile = document.createElement("img");
+            /*img id for it to give location of tile within puzzle board (0) */
+            tile.id = r.toString() + "-" + c.toString();
+            /*setimage source.. from front of array linking it to the corresponding photos*/
+            tile.src = imgOrder.shift() + ".jpg";
+
+            //DRAG FUNCTION
+            tile.addEventListener("dragstart", dragStart); //click image
+            tile.addEventListener("dragover", dragOver); //move image
+            tile.addEventListener("dragenter", dragEnter); //image drags onto another
+            tile.addEventListener("dragleave", dragLeave); // leaves dragged image
+            tile.addEventListener("drop", dragDrop); //drop dragged image
+            tile.addEventListener("dragend", dragEnd); // two tiles swapped
+
+            // inserts the tag within the board
+            document.getElementById("puzzle-board").append(tile);
+        }
+    }
+}
+
+
+
+//One of the scss error-handling directives
+
+//** Do Not think this will work with my game, being that my game is simple and there is not room for error
